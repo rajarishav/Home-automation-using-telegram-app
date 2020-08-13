@@ -123,7 +123,7 @@ void setup() {
   digitalWrite(ledPin, LOW); //  initialize pin as off
         pinMode(fanPin, OUTPUT); // initialize digital ledPin as fan output.
         delay(10);
-        digitalWrite(fanPin, LOW); // initialize pin as off
+        digitalWrite(fanPin, LOW); // initialize pin as fan off
 }
 
 void loop() {
