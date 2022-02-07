@@ -1,7 +1,7 @@
  /*******************************************************************
  *  Modified by Raja Rishav thakur ,https://www.facebook.com/profile.php?id=100008188006861
    follow my official page for more such type of projects https://www.facebook.com/yourselectronics/
- *  This code is modified to control a light and a fan using Relay
+ *  This code is for Home automation using telegram
  *  An example of bot that receives commands and turns on and off  *
  *  an LED.                                                        *                                                               *
  *  written by Giacarlo Bacchio (Gianbacchio on Github)            *
@@ -26,9 +26,9 @@ int Bot_mtbs = 1000; //mean time between scan messages
 long Bot_lasttime;   //last time messages' scan has been done
 bool Start = false;
 
-const int ledPin =13; // Bulb pin
+const int ledPin =13; // Bulb pin(GPIO of ESP32)
 int ledStatus = 0;
-   const int fanPin =12; //Fan pin
+   const int fanPin =12; //Fan pin 
    int fanStatus = 0;
 
 void handleNewMessages(int numNewMessages) {
